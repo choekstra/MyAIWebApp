@@ -10,8 +10,6 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      AWS_REGION: us-east-1
-      AWS_ACCOUNT_ID: 591924294563
       ECS_CLUSTER_NAME: my-ecs-cluster
       ECS_SERVICE_NAME: my-ai-app-service
       IMAGE_TAG: latest
