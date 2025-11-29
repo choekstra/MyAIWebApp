@@ -15,7 +15,7 @@ jobs:
       IMAGE_TAG: latest
 
     steps:
-    # Step 1 1 comment: Check out the repository code
+    # Step  1 1 comment: Check out the repository code
     - name: Checkout code
       uses: actions/checkout@v2
 
@@ -34,3 +34,5 @@ jobs:
     - name: Force new ECS deployment
       run: |
         aws ecs update-service --cluster $ECS_CLUSTER_NAME --service $ECS_SERVICE_NAME --force-new-deployment --region us-east-1
+
+
