@@ -10,8 +10,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: AKIAYTULP6OR37BMXV67
+      AWS_SECRET_ACCESS_KEY: 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
       AWS_REGION: us-east-1
       AWS_ACCOUNT_ID: 591924294563
       ECS_CLUSTER_NAME: my-ecs-cluster
