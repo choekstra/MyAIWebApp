@@ -19,7 +19,7 @@ jobs:
       IMAGE_TAG: latest
 
     steps:
-    # Step 1: cCheck out the repository code
+    # Step 1: c2Check out the repository code
     - name: Checkout code
       uses: actions/checkout@v2
 
