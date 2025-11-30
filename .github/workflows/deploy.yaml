@@ -1,4 +1,4 @@
-name: My_Deploy to AWS ECS
+name: My_Deploy_to AWS ECS
 
 on:
   push:
