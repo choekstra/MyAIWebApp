@@ -26,7 +26,7 @@ jobs:
     # Step 2: Log in to Amazon ECR
     - name: Log in to Amazon ECR
       run: |
-        aws ecr get-login-password --region $AWS_REGION | docker login --username AWS --password-stdin $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com
+        aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 591924294563.dkr.ecr.us-east-1.amazonaws.com
 
     # Step 3: Build, tag, and push Docker image to Amazon ECR
     - name: Build, tag, and push Docker image
@@ -38,3 +38,4 @@ jobs:
     - name: Force new ECS deployment
       run: |
         aws ecs update-service --cluster $ECS_CLUSTER_NAME --service $ECS_SERVICE_NAME --force-new-deployment --region $AWS_REGION
+
